@@ -1,0 +1,668 @@
+@font-face {
+  font-family: adinaka-bold;
+  src: url(./source/font/ADLINNAKA-BOLDDEMO.TTF);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./source/background/BG_PROPOSAL-11.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: 16px;
+  min-width: 100%;
+  min-height: 100%;
+  font-family: adinaka-bold;
+  overflow-x: hidden;
+}
+html {
+  overflow-x: hidden;
+  min-width: 100%;
+  scroll-behavior: smooth;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* @@@@@@@@@@@@@ NAVBAR @@@@@@@@@@@@*/
+nav {
+  height: auto;
+  width: auto;
+  background-color: #ef4b24;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.navbar-content {
+  display: flex;
+  width: 100%;
+  margin: auto 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 100%;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.logo-wrapper {
+  margin: 0.5em;
+}
+
+.burger-wrapper {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.photo {
+  max-width: 200px;
+}
+
+.about-container {
+  margin: 5rem;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.about-wrapper img {
+  max-width: fit-content;
+}
+
+/* @@@@@@@@@@@@@ ABOUT @@@@@@@@@@@@*/
+.container {
+  max-width: 100%;
+  text-align: center;
+}
+.border {
+  max-width: 100%;
+  border-radius: 0 0 3% 3%;
+  border: 2px solid white;
+}
+.square-radius {
+  padding-bottom: 1vw;
+  margin-top: 8vw;
+  margin-bottom: 2vw;
+  display: inline-block;
+  max-width: 70%;
+  border-radius: 0 0 3% 3%;
+  background-color: #ef4b24;
+}
+
+.border img {
+  min-width: 60vw;
+}
+.photo {
+  margin-top: -6%;
+  margin-bottom: -2vw;
+}
+.about-text {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.about-text h1 {
+  font-size: 6rem !important;
+  margin-bottom: 1vw;
+  color: whitesmoke;
+}
+.about-text p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem !important;
+  font-weight: normal;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 4vw;
+  color: whitesmoke;
+}
+
+/* @@@@@@@@@@@@@ VISI & MISI @@@@@@@@@@@@*/
+.icon-visi {
+  text-align: left;
+  position: absolute;
+  border: 2px blue;
+  margin-top: 5.8vw;
+  left: 13vw;
+  right: 0;
+}
+.icon-visi img {
+  width: 10vw;
+}
+
+.icon-misi {
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  border: 2px blue;
+  margin-top: -10vw;
+  top: auto;
+  left: -13vw;
+  right: 0;
+  z-index: 9999;
+}
+
+.icon-misi img {
+  width: 10vw;
+}
+
+.container :is(.visi, .misi) {
+  color: whitesmoke;
+}
+.visi {
+  margin-top: 7vw;
+  text-align: left;
+  padding-left: 5vw;
+  padding-right: 10vw;
+  /* margin-bottom: -1vw; */
+}
+.visi h1 {
+  padding-bottom: 1.2vw;
+  font-size: 4.8rem !important;
+}
+
+.misi {
+  text-align: left;
+  padding-left: 5vw;
+  margin-top: 2vw;
+  padding-right: 8vw;
+  margin-bottom: 3vw;
+}
+.misi h1 {
+  padding-bottom: 1.2vw;
+  font-size: 4.8rem !important;
+}
+
+ol li {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2vw;
+  font-size: 2rem !important;
+  line-height: 3rem;
+}
+
+.asset-container {
+  position: relative;
+  top: -21vw;
+  width: 100%;
+  text-align: left;
+  margin-left: -3vw;
+  z-index: 999;
+}
+
+.asset-1 {
+  width: 93%;
+}
+
+.row {
+  max-width: 70%;
+  width: 80vw;
+  margin-top: 23vw;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 50vw;
+  background-color: #ef4b24;
+  margin-bottom: 10vw;
+  border-radius: 0 0 3% 3%;
+}
+
+.square-2 {
+  border-radius: 50%;
+  min-height: 50vw;
+  position: relative;
+  background-color: #ef4b24;
+  text-align: left;
+  padding-bottom: 4vw;
+}
+
+.square-2:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -8vw;
+  left: 0;
+  background-color: #ef4b24;
+  transform: skewY(-3deg);
+  z-index: -1;
+}
+
+.square-2 ol {
+  margin-top: -23vw;
+  color: whitesmoke;
+  list-style: none;
+}
+.square-2 ol li {
+  line-height: 2rem;
+}
+.square-2 ol li h1 {
+  font-size: 2.5rem;
+  margin-right: 22vw;
+  line-height: 2.5rem;
+}
+.square-2 ol li p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-right: 7vw;
+  padding-bottom: 3vw;
+}
+
+.asset-3 {
+  min-width: 70%;
+  position: absolute;
+  text-align: right;
+  margin-top: -12vw;
+  margin-left: 5vw;
+}
+.asset-3 img {
+  width: 16vw;
+}
+
+/* @@@@@@@@@@@@@ Menu Favorit @@@@@@@@@@@@ */
+.menu-title {
+  max-width: 78%;
+  text-align: left;
+  margin-right: auto;
+  margin-left: 11vw;
+  /* margin-top: vw; */
+}
+
+.asset-4 {
+  width: 100%;
+}
+
+.menu-content {
+  width: 100%;
+  position: relative;
+  top: -8vw;
+  padding: -5;
+}
+
+.menu-1 {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 5vw;
+  align-items: center;
+}
+
+.salmon-mentai img {
+  text-align: center;
+  width: 55vw;
+}
+
+.asset-5 img {
+  margin-left: -21.2vw;
+  margin-top: -30vw;
+  width: 40vw;
+}
+
+.menu-2 {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 8vw;
+}
+
+.menu-2-content img {
+  text-align: center;
+  width: 35vw;
+}
+
+.takoyaki-gurita {
+  position: relative;
+  right: 3vw;
+  margin-top: 2vw;
+}
+
+.asset-6 {
+  position: relative;
+  z-index: 1;
+  margin-left: -25vw;
+  top: 4vw;
+  right: 7vw;
+  width: 30vw;
+}
+
+.okonomiyaki-seafood {
+  position: relative;
+  top: -35vw;
+  margin-left: 30vw;
+  left: 5vw;
+}
+
+.asset-7 {
+  position: relative;
+  margin-left: -32vw;
+  margin-top: 3vw;
+  width: 30vw;
+  top: 2vw;
+  right: 2vw;
+}
+
+.partnership {
+  max-width: 100%;
+  width: 72vw;
+  min-height: 10vw;
+  border-radius: 0 0 50px 50px;
+  background-color: #ef4b24;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0.8rem 4rem;
+  color: whitesmoke;
+  margin-top: -25vw;
+}
+
+.partnership h1 {
+  font-size: 5.4vw !important;
+}
+.partnership p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+  font-weight: 100;
+}
+
+.partnership-logo {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.partnership-logo img {
+  margin-left: 1vw;
+  margin-top: 2vw;
+  max-width: 100%;
+  min-width: 17vw;
+}
+
+.shopee-food {
+  position: relative;
+  right: 3vw;
+}
+
+/* @@@@@@@@@@@@@ Konsep Dine-in @@@@@@@@@@@@*/
+.dine-in {
+  margin-top: 10vw;
+  margin-left: 7.5vw;
+}
+
+.asset-8 {
+  width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.square {
+  width: 50%;
+}
+
+.square-header {
+  margin: 0 auto;
+}
+
+.square img {
+  width: 100%;
+  border: 1vw solid #ef4b24;
+  align-items: center;
+  text-align: center;
+}
+.image-flex img {
+  width: 40vw;
+}
+.image-flex {
+  position: relative;
+  top: -1vw;
+  background-color: #ef4b24;
+  border: 1vw solid #ef4b24;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.sketch-2 {
+  border-left: 0;
+}
+
+.sketch-3 {
+  border-left: 0;
+}
+
+.dine-in-asset {
+  min-width: 70%;
+  position: relative;
+  margin-top: 3vw;
+  text-align: right;
+  right: 8vw;
+  margin-bottom: -5vw;
+}
+
+.dine-in-asset img {
+  width: 16vw;
+}
+
+/* @@@@@@@@@@@@@ Paket Investasi 1 @@@@@@@@@@@@*/
+.asset-10 {
+  top: -22vw;
+  left: 5vw;
+  padding-top: 10vw;
+  width: 100%;
+}
+
+.square-2 ul {
+  margin-top: -23vw;
+  position: relative;
+  top: -3vw;
+}
+
+.list-investasi {
+  color: whitesmoke;
+}
+.list-investasi h1 {
+  font-size: 3.5rem;
+  margin-left: 4vw;
+  margin-top: 2vw;
+}
+.list-investasi p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+.pricing img {
+  width: 15%;
+  margin-top: -7vw;
+  float: right;
+  margin-right: 3vw;
+}
+.square-2 > ul li {
+  list-style: square;
+  font-size: 2rem;
+  margin-left: 5.5vw;
+}
+.line {
+  margin: 0 auto;
+  margin-top: 2vw;
+  width: 90%;
+  border: 2px solid whitesmoke;
+}
+.footer-investasi {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  margin-left: 4.2vw;
+}
+
+/* @@@@@@@@@@@@@ Paket Investasi 2 @@@@@@@@@@@@*/
+
+.title {
+  padding-top: 5vw;
+}
+.list-investasi-1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.asset-3-paket-investasi {
+  position: relative;
+  top: 8vw;
+  left: 5vw;
+}
+
+/* @@@@@@@@@@@@@ Paket Investasi 3 @@@@@@@@@@@@*/
+.margin-p {
+  margin-bottom: 20vw;
+}
+.paket-investasi-3-pricing {
+  position: relative;
+  right: 30vw;
+  top: -1vw;
+  width: 100vw;
+}
+
+.maps {
+  margin-top: -23vw;
+  background-color: #ef4b24;
+  text-align: center;
+  border-radius: 0%;
+}
+
+/*@@@@@@@@@@@@ MOBILE @@@@@@@@@@@@*/
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("./source/background/BG_PROPOSAL-11.jpg");
+  }
+  .nav-links {
+    position: fixed;
+    max-height: 50vh;
+    width: 100%;
+    flex-direction: column;
+    transform: translate(0, -100%);
+    background-color: blue;
+    clip-path: square(100px at 50% -50%);
+    -webkit-clip-path: square(100px at 50% -50%);
+    transition: all 1.2s ease-out;
+  }
+  .nav-links.open {
+    max-height: 50vh;
+    clip-path: square(100px at 50% -50%);
+    -webkit-clip-path: square(400px at 50% -50%);
+    transform: translate(0, 30%);
+    border-radius: 0 0 20% 20%;
+    overflow: hidden;
+  }
+
+  .navbar-content {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    margin: auto 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-wrapper {
+    margin-inline-start: 1rem;
+  }
+  .logo {
+    max-width: 100%;
+    width: 60px;
+    border-radius: 50%;
+  }
+
+  .burger-wrapper {
+    display: block;
+    margin-inline-end: 2rem;
+    z-index: 2;
+  }
+  .line {
+    cursor: pointer;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }
+  .about-container {
+    margin: 5rem;
+    text-align: center;
+  }
+
+  .about-wrapper img {
+    max-width: fit-content;
+  }
+
+  .container {
+    width: 100%;
+    text-align: center;
+  }
+  .border {
+    display: inline-block;
+
+    max-width: 100%;
+    min-height: 45vw;
+    border-radius: 0 0 10% 10%;
+    border: 2px solid white;
+  }
+  .square-radius {
+    margin: 10vw 0;
+    display: inline-block;
+    max-width: 70%;
+    min-height: 46vw;
+    border-radius: 0 0 10% 10%;
+    background-color: #ef4b24;
+  }
+  .border img {
+    max-width: 80%;
+    min-width: 20%;
+    width: 400px;
+  }
+  .photo {
+    margin-top: -8%;
+  }
+  .about-text {
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 20%;
+  }
+
+  .about-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1vw;
+    color: whitesmoke;
+  }
+  .about-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    margin-bottom: 1vw;
+    color: whitesmoke;
+  }
+}
