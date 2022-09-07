@@ -556,7 +556,7 @@ ol li {
 }
 
 /*@@@@@@@@@@@@ MOBILE @@@@@@@@@@@@*/
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     background-image: url("./source/background/BG_PROPOSAL-11.jpg");
   }
@@ -664,5 +664,5 @@ ol li {
     margin-right: 12vw;
     margin-bottom: 1vw;
     color: whitesmoke;
-  } */
+  }
 }
