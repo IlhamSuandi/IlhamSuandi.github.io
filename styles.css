@@ -391,7 +391,6 @@ ol li {
 .partnership p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  font-weight: 100;
 }
 
 .partnership-logo {
@@ -658,7 +657,6 @@ ol li {
   .about-text p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    font-weight: normal;
     margin-left: 5vw;
     margin-right: 5vw;
     margin-bottom: 4vw;
@@ -901,6 +899,10 @@ ol li {
   .partnership p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3vw;
+<<<<<<< HEAD
+=======
+    font-weight: 3vw;
+>>>>>>> 01f82b0fd097a748054481a3554cfec19416a665
   }
 
   .partnership-logo {
