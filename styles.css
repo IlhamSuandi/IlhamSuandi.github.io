@@ -1111,8 +1111,7 @@ ol li {
 
   /* @@@@@@@@@@@@@ Syarat Menjadi Mitra @@@@@@@@@@@@*/
   .yellow-line {
-    margin: 0 auto;
-    margin-top: 2vw;
+    margin: 2vw auto;
     width: 90%;
     max-height: 1px;
     border: 2px solid orange;
