@@ -577,7 +577,11 @@
         offset: 400,
         duration: 1000,
         once: false,
+        disableMutationObserver: false,
+        debounceDelay: 50,
+        throttleDelay: 99,
       });
+      setTimeout(function () { AOS.init(); }, 1000);
     </script>
   </body>
 </html>
