@@ -568,6 +568,7 @@ ol li {
   margin: 0 auto;
   margin-top: 2vw;
   width: 90%;
+  max-height: 1px;
   border: 2px solid orange;
 }
 .syarat-mitra {
@@ -1113,6 +1114,7 @@ ol li {
     margin: 0 auto;
     margin-top: 2vw;
     width: 90%;
+    max-height: 1px;
     border: 2px solid orange;
   }
   .asset-11 {
