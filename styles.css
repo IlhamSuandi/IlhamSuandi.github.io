@@ -23,11 +23,12 @@ body {
   min-width: 100%;
   min-height: 100%;
   font-family: adinaka-bold;
-  overflow: hidden;
+  overflow-y: hidden;
 }
-html {
+html,
+body {
   overflow-x: hidden;
-  min-width: 100%;
+  max-width: 100%;
   scroll-behavior: smooth;
 }
 
@@ -72,19 +73,21 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
-  width: 50%;
+  width: 60%;
   height: 100%;
   justify-content: space-around;
   align-items: center;
-  padding: 2rem;
+  margin-right: 5vw;
   text-transform: capitalize;
   font-family: Arial, Helvetica, sans-serif;
+  gap: 5vw;
+  text-align: center;
 }
 
 .nav-links li a {
   color: whitesmoke;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: calc(0.5rem + 1vw);
 }
 
 .photo {
@@ -391,6 +394,7 @@ ol li {
 .partnership p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
+  font-weight: 100;
 }
 
 .partnership-logo {
@@ -474,7 +478,7 @@ ol li {
 /* @@@@@@@@@@@@@ Paket Investasi 1 @@@@@@@@@@@@*/
 .asset-10 {
   top: -22vw;
-  left: 5vw;
+  left: 2vw;
   padding-top: 10vw;
   width: 100%;
 }
@@ -522,10 +526,10 @@ ol li {
 }
 
 /* @@@@@@@@@@@@@ Paket Investasi 2 @@@@@@@@@@@@*/
-
 .title {
-  padding-top: 5vw;
+  padding-top: 2vw;
 }
+
 .list-investasi-1 p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
@@ -542,6 +546,12 @@ ol li {
   font-size: 2.5rem;
 }
 
+.paket-investasi-2-img {
+  padding-top: 10vw;
+  left: 2vw;
+  top: -23.5vw;
+}
+
 /* @@@@@@@@@@@@@ Paket Investasi 3 @@@@@@@@@@@@*/
 .margin-p {
   margin-bottom: 20vw;
@@ -553,18 +563,111 @@ ol li {
   width: 100vw;
 }
 
-.maps {
-  margin-top: -23vw;
-  background-color: #ef4b24;
-  text-align: center;
-  border-radius: 0%;
+/* @@@@@@@@@@@@@ Syarat Menjadi Mitra @@@@@@@@@@@@*/
+.yellow-line {
+  margin: 0 auto;
+  margin-top: 2vw;
+  width: 90%;
+  border: 2px solid orange;
+}
+.syarat-mitra {
+  margin-top: -25vw;
+  margin-bottom: 10vw;
+}
+.asset-11 {
+  top: -25vw;
+  left: 2vw;
+  padding-top: 10vw;
+  width: 100%;
+}
+.flex-text {
+  align-items: center;
+  display: flex;
+  color: whitesmoke;
+}
+.flex-text h1 {
+  margin-left: 5vw;
+  font-size: calc(7vw + 1rem);
+  margin-right: 5vw;
+}
+.sub {
+  width: 75%;
+  margin-left: calc(1.7vw - 1pt);
+}
+.flex-text p {
+  font-size: calc(1vw + 1rem);
+  margin-right: 5vw;
+}
+.icon-sushi {
+  width: 100%;
+  text-align: right;
+  position: relative;
+  border: 2px blue;
+  margin-top: -20vw;
+  margin-bottom: 40vw;
+  top: 10vw;
+  left: 5vw;
+  z-index: 9999;
+}
+.icon-sushi img {
+  width: 30vw;
 }
 
+/* @@@@@@@@@@@@@ Cara Menjadi Mitra @@@@@@@@@@@@*/
+.arrow img {
+  width: 85%;
+  margin: 2vw 0;
+}
+.arrow {
+  text-align: center;
+}
+.icon-container img {
+  width: 10vw;
+}
+.icon-container {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.icon-container h1 {
+  font-size: 5rem;
+  padding-left: 1.5vw;
+}
+.flex-items {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 8vw;
+  color: whitesmoke;
+  /* border: 2px solid black; */
+  gap: 3vw;
+}
+.flex {
+  width: 50%;
+  /* border: 2px solid yellow; */
+  margin: 0 1vw;
+}
+
+.subtitle {
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  padding-top: 1.2rem;
+}
+
+/*@@@@@@@@@@@@ MAPS @@@@@@@@@@@@*/
+.maps {
+  margin-top: -23vw;
+  /* background-color: #ef4b24; */
+  text-align: center;
+  border-radius: 20%;
+}
+
+.mobile-maps {
+  display: none;
+}
 /*@@@@@@@@@@@@ MOBILE @@@@@@@@@@@@*/
 @media screen and (max-width: 768px) {
-  body {
-    background-image: url("./source/background/BG_PROPOSAL-11.jpg");
-  }
   .nav-links {
     position: fixed;
     max-height: 50vh;
@@ -587,11 +690,12 @@ ol li {
 
   .navbar-content {
     display: flex;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin: auto 0;
     align-items: center;
     justify-content: space-between;
+    /* border: 2px solid black; */
   }
   .logo-wrapper {
     margin-inline-start: 1rem;
@@ -630,7 +734,7 @@ ol li {
     margin-top: 8vw;
     margin-bottom: 2vw;
     display: inline-block;
-    width: 80vw;
+    width: 90vw;
     border-radius: 0 0 30px 30px;
     background-color: #ef4b24;
   }
@@ -657,6 +761,7 @@ ol li {
   .about-text p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
+    font-weight: normal;
     margin-left: 5vw;
     margin-right: 5vw;
     margin-bottom: 4vw;
@@ -670,7 +775,7 @@ ol li {
     position: absolute;
     border: 2px blue;
     margin-top: 5vw;
-    left: 5vw;
+    left: 1vw;
     right: 0;
   }
   .icon-visi img {
@@ -684,7 +789,7 @@ ol li {
     border: 2px blue;
     margin-top: -10vw;
     top: auto;
-    left: -7vw;
+    left: -2vw;
     right: 0;
     z-index: 9999;
   }
@@ -732,7 +837,6 @@ ol li {
     top: -21vw;
     width: 100%;
     text-align: left;
-    margin-left: -3vw;
     z-index: 999;
   }
 
@@ -742,7 +846,7 @@ ol li {
 
   .row {
     max-width: 90%;
-    width: 80vw;
+    width: 90vw;
     margin-top: 23vw;
     margin-left: auto;
     margin-right: auto;
@@ -800,7 +904,7 @@ ol li {
     position: absolute;
     text-align: right;
     margin-top: -12vw;
-    margin-left: 15vw;
+    margin-left: 25vw;
   }
   .asset-3 img {
     width: 16vw;
@@ -832,7 +936,6 @@ ol li {
   }
 
   .asset-5 img {
-    margin-left: -21.2vw;
     margin-top: -30vw;
     width: 40vw;
   }
@@ -858,7 +961,6 @@ ol li {
   .asset-6 {
     position: relative;
     z-index: 1;
-    margin-left: -25vw;
     top: 4vw;
     right: 7vw;
     width: 30vw;
@@ -867,13 +969,12 @@ ol li {
   .okonomiyaki-seafood {
     position: relative;
     top: -35vw;
-    margin-left: 30vw;
+    /* margin-left: 30vw; */
     left: 5vw;
   }
 
   .asset-7 {
     position: relative;
-    margin-left: -32vw;
     margin-top: 3vw;
     width: 30vw;
     top: 2vw;
@@ -882,7 +983,7 @@ ol li {
 
   .partnership {
     max-width: 100%;
-    width: 80vw;
+    width: 90vw;
     min-height: 10vw;
     border-radius: 0 0 30px 30px;
     background-color: #ef4b24;
@@ -899,10 +1000,6 @@ ol li {
   .partnership p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3vw;
-<<<<<<< HEAD
-=======
-    font-weight: 3vw;
->>>>>>> 01f82b0fd097a748054481a3554cfec19416a665
   }
 
   .partnership-logo {
@@ -926,14 +1023,15 @@ ol li {
 
   /* @@@@@@@@@@@@@ Paket Investasi 1 @@@@@@@@@@@@*/
   .asset-10 {
-    top: -22vw;
-    left: 5vw;
+    top: -25vw;
+    left: 2vw;
     padding-top: 10vw;
-    width: 100%;
+    width: 110%;
   }
 
   .square-2 ul {
     margin-top: -23vw;
+    margin-left: 2vw;
     position: relative;
     top: -3vw;
   }
@@ -942,7 +1040,7 @@ ol li {
     color: whitesmoke;
   }
   .list-investasi h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 4vw;
     margin-top: 2vw;
   }
@@ -973,11 +1071,13 @@ ol li {
     color: whitesmoke;
     font-size: 0.8rem;
     margin-left: 4.2vw;
+    margin-right: 4.2vw;
   }
 
   /* @@@@@@@@@@@@@ Paket Investasi 2 @@@@@@@@@@@@*/
-  .title {
-    padding-top: 5vw;
+  .title h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
   }
 
   .list-investasi-1 p {
@@ -1006,5 +1106,112 @@ ol li {
     right: 23vw;
     top: -1vw;
     width: 100vw;
+  }
+
+  /* @@@@@@@@@@@@@ Syarat Menjadi Mitra @@@@@@@@@@@@*/
+  .yellow-line {
+    margin: 0 auto;
+    margin-top: 2vw;
+    width: 90%;
+    border: 2px solid orange;
+  }
+  .asset-11 {
+    top: -25vw;
+    left: 2vw;
+    padding-top: 10vw;
+    width: 100%;
+  }
+  .syarat-mitra {
+    margin-top: -25vw;
+    /* padding-bottom: 20vw; */
+  }
+  .flex-text {
+    align-items: center;
+    display: flex;
+    color: whitesmoke;
+  }
+  .flex-text h1 {
+    margin-left: 5vw;
+    font-size: calc(7vw + 1rem);
+    margin-right: 5vw;
+  }
+  .sub {
+    width: 75%;
+    margin-left: calc(3vw - 1pt);
+  }
+  .flex-text p {
+    font-size: calc(1vw + 0.5rem);
+    margin-right: 5vw;
+  }
+  .icon-sushi {
+    width: 100%;
+    text-align: right;
+    position: relative;
+    border: 2px blue;
+    margin-top: -20vw;
+    margin-bottom: 40vw;
+    top: 10vw;
+    left: 5vw;
+    z-index: 9999;
+  }
+  .icon-sushi img {
+    width: 30vw;
+  }
+
+  /* @@@@@@@@@@@@@ Cara Menjadi Mitra @@@@@@@@@@@@*/
+  .arrow img {
+    width: 85%;
+    margin: 2vw 0;
+  }
+  .arrow {
+    text-align: center;
+  }
+  .icon-container img {
+    width: 15vw;
+  }
+  .icon-container {
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+
+  .icon-container h1 {
+    font-size: calc(7vw + 1rem);
+    padding-left: 1.5vw;
+  }
+  .flex-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 8vw;
+    color: whitesmoke;
+    /* border: 2px solid black; */
+    gap: 5vw;
+  }
+  .flex {
+    width: 100%;
+    /* border: 2px solid yellow; */
+    margin: 0 1vw;
+  }
+
+  .subtitle {
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: calc(0.5vw + 1rem);
+    padding-top: 1.2rem;
+  }
+
+  /* @@@@@@@@@@@@@ Cara Menjadi Mitra @@@@@@@@@@@@*/
+  .desktop-maps {
+    display: none;
+  }
+  .mobile-maps {
+    display: block;
+  }
+  .maps {
+    margin-top: -23vw;
+    /* background-color: #ef4b24; */
+    text-align: center;
+    border-radius: 20%;
   }
 }
