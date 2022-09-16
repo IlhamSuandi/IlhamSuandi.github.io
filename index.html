@@ -571,24 +571,13 @@
     </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="app.js"></script>
     <script>
       AOS.init({
         offset: 400,
         duration: 1000,
         once: false,
-        disableMutationObserver: false,
-        debounceDelay: 50,
-        throttleDelay: 99,  
       });
-      
-      document.querySelectorAll('img')
-            .forEach((img) => 
-                img.addEventListener('load', () => 
-                    AOS.refresh()
-                )
-      );
-      <script src="app.js"></script>
-      setTimeout(function () { AOS.init(); }, 1000);
     </script>
   </body>
 </html>
