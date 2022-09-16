@@ -2,6 +2,10 @@
   font-family: adinaka-bold;
   src: url(./source/font/ADLINNAKA-BOLDDEMO.TTF);
 }
+@font-face {
+  font-family: isidora-black;
+  src: url(./source/font/ISIDORABLACK.OTF);
+}
 
 *,
 *::after,
@@ -141,6 +145,7 @@ nav {
   margin-bottom: 1vw;
   color: whitesmoke;
 }
+
 .about-text p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
@@ -214,18 +219,25 @@ ol li {
   line-height: 3rem;
 }
 
-/* @@@@@@@@@@@@@ ASSET CONTAINER @@@@@@@@@@@@*/
+/* @@@@@@@@@@@@@ Benefit @@@@@@@@@@@@*/
 .asset-container {
-  position: relative;
-  top: -21vw;
   width: 100%;
   text-align: left;
-  margin-left: -3vw;
-  z-index: 999;
 }
 
-.asset-1 {
-  width: 93%;
+.asset-container h1 {
+  position: relative;
+  top: -26vw;
+  z-index: 999;
+  margin-top: 35vw;
+  margin-left: -1.5vw;
+  line-height: 10.5vw;
+  font-family: isidora-black;
+  -webkit-text-stroke: 2px #d47241;
+  text-shadow: -0.7vw 0.2vw #e05f5f, 0.2vw 1.3vw 1.8vw #000000;
+  transform: rotate(-4deg);
+  color: #ffffff;
+  font-size: 10vw;
 }
 
 .row {
@@ -295,11 +307,11 @@ ol li {
 
 /* @@@@@@@@@@@@@ Menu Favorit @@@@@@@@@@@@ */
 .menu-title {
-  max-width: 78%;
-  text-align: left;
-  margin-right: auto;
-  margin-left: 11vw;
-  /* margin-top: vw; */
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  margin-bottom: -19vw;
+  margin-top: 10vw;
 }
 
 .asset-4 {
@@ -417,17 +429,6 @@ ol li {
 }
 
 /* @@@@@@@@@@@@@ Konsep Dine-in @@@@@@@@@@@@*/
-.dine-in {
-  margin-top: 10vw;
-  margin-left: 7.5vw;
-}
-
-.asset-8 {
-  width: 100%;
-  padding-left: 5vw;
-  padding-right: 5vw;
-}
-
 .square {
   width: 50%;
 }
@@ -476,13 +477,11 @@ ol li {
 }
 
 /* @@@@@@@@@@@@@ Paket Investasi 1 @@@@@@@@@@@@*/
-.asset-10 {
-  top: -22vw;
-  left: 2vw;
-  padding-top: 10vw;
-  width: 100%;
+.title-investasi h1 {
+  padding-top: 5vw;
+  font-size: 5.5vw;
+  line-height: 6vw;
 }
-
 .square-2 ul {
   margin-top: -23vw;
   position: relative;
@@ -496,6 +495,7 @@ ol li {
   font-size: 3.5rem;
   margin-left: 4vw;
   margin-top: 2vw;
+  padding-top: 2vw;
 }
 .list-investasi p {
   font-family: Arial, Helvetica, sans-serif;
@@ -529,6 +529,7 @@ ol li {
 /* @@@@@@@@@@@@@ Paket Investasi 2 @@@@@@@@@@@@*/
 .title {
   padding-top: 2vw;
+  margin-top: 2vw;
 }
 
 .list-investasi-1 p {
@@ -566,23 +567,18 @@ ol li {
 
 /* @@@@@@@@@@@@@ Syarat Menjadi Mitra @@@@@@@@@@@@*/
 .yellow-line {
-  background-color: orange;
   margin: 0 auto;
   margin-top: 2vw;
   width: 90%;
   max-height: 1px;
   border: 2px solid orange;
+  background-color: orange;
 }
 .syarat-mitra {
-  margin-top: -25vw;
+  margin-top: -21vw;
   margin-bottom: 10vw;
 }
-.asset-11 {
-  top: -25vw;
-  left: 2vw;
-  padding-top: 10vw;
-  width: 100%;
-}
+
 .flex-text {
   align-items: center;
   display: flex;
@@ -601,13 +597,15 @@ ol li {
   font-size: calc(1vw + 1rem);
   margin-right: 5vw;
 }
+
+/* @@@@@@@@@@@@@ Cara Menjadi Mitra @@@@@@@@@@@@*/
 .icon-sushi {
   width: 100%;
   text-align: right;
   position: relative;
   border: 2px blue;
   margin-top: -20vw;
-  margin-bottom: 40vw;
+  margin-bottom: 45vw;
   top: 10vw;
   left: 5vw;
   z-index: 9999;
@@ -615,8 +613,6 @@ ol li {
 .icon-sushi img {
   width: 30vw;
 }
-
-/* @@@@@@@@@@@@@ Cara Menjadi Mitra @@@@@@@@@@@@*/
 .arrow img {
   width: 85%;
   margin: 2vw 0;
@@ -659,8 +655,14 @@ ol li {
 }
 
 /*@@@@@@@@@@@@ MAPS @@@@@@@@@@@@*/
+.title-maps h1 {
+  padding-top: 20vw;
+  top: -43vw;
+}
+
 .maps {
-  margin-top: -23vw;
+  margin-top: -50vw;
+  padding-top: 10vw;
   /* background-color: #ef4b24; */
   text-align: center;
   border-radius: 20%;
@@ -836,15 +838,23 @@ ol li {
 
   /* @@@@@@@@@@@@@ BENEFIT @@@@@@@@@@@@*/
   .asset-container {
-    position: relative;
-    top: -21vw;
     width: 100%;
     text-align: left;
-    z-index: 999;
   }
 
-  .asset-1 {
-    width: 93%;
+  .asset-container h1 {
+    position: relative;
+    top: -26vw;
+    z-index: 999;
+    margin-top: 35vw;
+    margin-left: -1.5vw;
+    line-height: 12.3vw;
+    font-family: isidora-black;
+    -webkit-text-stroke: 2px #d47241;
+    text-shadow: -0.7vw 0.2vw #e05f5f, 0.2vw 1.3vw 1.8vw #000000;
+    transform: rotate(-4deg);
+    color: #ffffff;
+    font-size: 11.8vw;
   }
 
   .row {
@@ -914,6 +924,9 @@ ol li {
   }
 
   /* @@@@@@@@@@@@@ Menu Favorit @@@@@@@@@@@@ */
+  .menu-title h1 {
+    font-size: 10vw;
+  }
   .asset-4 {
     width: 100%;
   }
@@ -1025,6 +1038,13 @@ ol li {
   }
 
   /* @@@@@@@@@@@@@ Paket Investasi 1 @@@@@@@@@@@@*/
+
+  .title-investasi h1 {
+    padding-top: 5vw;
+    font-size: 7vw;
+    line-height: 6vw;
+  }
+
   .asset-10 {
     top: -25vw;
     left: 2vw;
@@ -1114,11 +1134,11 @@ ol li {
 
   /* @@@@@@@@@@@@@ Syarat Menjadi Mitra @@@@@@@@@@@@*/
   .yellow-line {
-    background-color: orange;
     margin: 2vw auto;
     width: 90%;
     max-height: 1px;
     border: 2px solid orange;
+    background-color: orange;
   }
   .asset-11 {
     top: -25vw;
@@ -1126,10 +1146,12 @@ ol li {
     padding-top: 10vw;
     width: 100%;
   }
+
   .syarat-mitra {
-    margin-top: -25vw;
-    /* padding-bottom: 20vw; */
+    padding-top: -30vw;
+    padding-bottom: 20vw;
   }
+
   .flex-text {
     align-items: center;
     display: flex;
@@ -1213,8 +1235,14 @@ ol li {
   .mobile-maps {
     display: block;
   }
+  .title-maps h1 {
+    padding-top: 20vw;
+    top: -43vw;
+  }
+
   .maps {
-    margin-top: -23vw;
+    margin-top: -54vw;
+    padding-top: 14vw;
     /* background-color: #ef4b24; */
     text-align: center;
     border-radius: 20%;
