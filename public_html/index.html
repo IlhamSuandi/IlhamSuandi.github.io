@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Ebiko Sushi & Takoyaki</title>
   </head>
   <body>
@@ -570,7 +570,7 @@
       </div>
     </section>
 
-
+    
     <script src="app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -578,7 +578,11 @@
         offset: 400,
         duration: 1000,
         once: false,
+        disableMutationObserver: false,
+        debounceDelay: 50,
+        throttleDelay: 99,
       });
+      setTimeout(function () { AOS.init(); }, 1000);
     </script>
   </body>
 </html>

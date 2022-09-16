@@ -518,6 +518,7 @@ ol li {
   margin-top: 2vw;
   width: 90%;
   border: 2px solid whitesmoke;
+  background-color: whitesmoke;
 }
 .footer-investasi {
   color: whitesmoke;
@@ -565,9 +566,11 @@ ol li {
 
 /* @@@@@@@@@@@@@ Syarat Menjadi Mitra @@@@@@@@@@@@*/
 .yellow-line {
+  background-color: orange;
   margin: 0 auto;
   margin-top: 2vw;
   width: 90%;
+  max-height: 1px;
   border: 2px solid orange;
 }
 .syarat-mitra {
@@ -1066,6 +1069,7 @@ ol li {
     margin-top: 2vw;
     width: 90%;
     border: 2px solid whitesmoke;
+    background-color: whitesmoke;
   }
   .footer-investasi {
     color: whitesmoke;
@@ -1110,9 +1114,10 @@ ol li {
 
   /* @@@@@@@@@@@@@ Syarat Menjadi Mitra @@@@@@@@@@@@*/
   .yellow-line {
-    margin: 0 auto;
-    margin-top: 2vw;
+    background-color: orange;
+    margin: 2vw auto;
     width: 90%;
+    max-height: 1px;
     border: 2px solid orange;
   }
   .asset-11 {
