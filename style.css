@@ -656,21 +656,18 @@ ol li {
 
 /*@@@@@@@@@@@@ MAPS @@@@@@@@@@@@*/
 .title-maps h1 {
-  padding-top: 20vw;
-  top: -43vw;
+  /* padding-top: 20vw; */
+  top: -20vw;
 }
 
-.maps {
-  margin-top: -50vw;
-  padding-top: 10vw;
-  /* background-color: #ef4b24; */
-  text-align: center;
-  border-radius: 20%;
+#map {
+  position: relative;
+  top: 2vw;
+  height: 900px;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.mobile-maps {
-  display: none;
-}
 /*@@@@@@@@@@@@ MOBILE @@@@@@@@@@@@*/
 @media screen and (max-width: 768px) {
   .nav-links {
@@ -1228,23 +1225,16 @@ ol li {
     padding-top: 1.2rem;
   }
 
-  /* @@@@@@@@@@@@@ Cara Menjadi Mitra @@@@@@@@@@@@*/
-  .desktop-maps {
-    display: none;
-  }
-  .mobile-maps {
-    display: block;
-  }
+  /* @@@@@@@@@@@@@ MAPS @@@@@@@@@@@@*/
   .title-maps h1 {
-    padding-top: 20vw;
-    top: -43vw;
+    top: -20vw;
   }
 
-  .maps {
-    margin-top: -54vw;
-    padding-top: 14vw;
-    /* background-color: #ef4b24; */
-    text-align: center;
-    border-radius: 20%;
+  #map {
+    position: relative;
+    top: 5vw;
+    height: 450px;
+    width: 80%;
+    margin: 0 auto;
   }
 }
