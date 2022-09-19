@@ -25,7 +25,7 @@ var locations = [
   ],
 ];
 
-var map = L.map("map").setView([-6.299548, 106.751261], 11);
+var map = L.map("map", { attributionControl: false }).setView([-6.299548, 106.751261], 11);
 var googleStreets = L.tileLayer(
   "http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}",
   {
