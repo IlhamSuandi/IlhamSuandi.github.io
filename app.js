@@ -25,7 +25,22 @@ var locations = [
   ],
 ];
 
-var map = L.map("map", { attributionControl: false }, { dragging: !L.Browser.mobile, tap: !L.Browser.mobile }).setView([-6.299548, 106.751261], 11);
+var pc = true;
+
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  pc = false;
+}
+
+var map = L.map("map", {
+  attributionControl: false,
+  dragging: pc,
+  tap: pc,
+}).setView([-6.299548, 106.751261], 11);
+
 var googleStreets = L.tileLayer(
   "http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}",
   {
@@ -48,4 +63,18 @@ for (var i = 0; i < locations.length; i++) {
   marker = L.marker([locations[i][1], locations[i][2]], { icon: markerIcon })
     .bindPopup(locations[i][0])
     .addTo(map);
+}
+
+const mapEl = document.querySelector("#map");
+
+// Binds event listeners for the map and calls the function
+mapEl.addEventListener("touchstart", onTwoFingerDrag);
+mapEl.addEventListener("touchend", onTwoFingerDrag);
+
+function onTwoFingerDrag(e) {
+  if (e.type === "touchstart" && e.touches.length === 1) {
+    e.currentTarget.classList.add("swiping");
+  } else {
+    e.currentTarget.classList.remove("swiping");
+  }
 }
