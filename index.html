@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="styles.css" />
+    
+    <link rel="stylesheet preload" href="styles.css" as="style"/>
     <link
+      aria-hidden="true"
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
       integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
       crossorigin=""
     />
     
-    <link rel="preload" as="style" href="styles.css">
+    <!-- <link rel="preload" as="style" href="styles.css"> -->
     <link rel="prefetch" as="style" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="prefetch" as="script" href="https://unpkg.com/aos@next/dist/aos.js">
     <title>Ebiko Sushi & Takoyaki</title>
@@ -246,11 +247,11 @@
     </section>
 
     <!-- @@@@@ Paket Investasi 1 @@@@@ -->
-    <section id="paket">
-      <div class="container">
+    <section>
+      <div class="container" >
         <div class="row">
           <div class="asset-container title-investasi">
-            <h1>Paket Investasi <br> Ebiko Sushi Dan Takoyaki</h1>
+            <h1 id="paket">Paket Investasi <br> Ebiko Sushi Dan Takoyaki</h1>
           </div>
           <div class="square-2">
             <ul class="list-investasi">
@@ -569,22 +570,34 @@
       </div>
     </section>
 
+    <a aria-hidden="true" href="https://web.whatsapp.com/send?phone=87890902525&text=Hallo%20kak%20Hanny%2C%20Saya%20tertarik%20dengan%20Ebiko%20Sushi%20%26%20Takoyaki%2C%20saya%20tahu%20info%20ini%20dari%20Web.%0AIni%20data%20diri%20saya%20%0ANama%20%3A%20%0AKota%20%3A%0AMohon%20berkomunikasi%20hanya%20dengan%201%20Marketing%20Kami%2C%20Terimakasih%20%F0%9F%98%8A%F0%9F%99%8F&type=phone_number&app_absent=0" target="_blank">
+      <div class="whatsapp-button">
+        <div class="flex-button">
+          <img src="./source/icon/wa-icon.webp" alt="">
+          <h1>Chat On Whatsapp</h1>
+        </div>
+      </div>
+    </a>
+    
+    
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+    <link rel="stylesheet" href="//unpkg.com/leaflet-gesture-handling/dist/leaflet-gesture-handling.min.css"
+    type="text/css">
+    
     <script
+      aria-hidden="true"
       src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
       integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
       crossorigin=""
     ></script>
-    <script src="app.js"></script>
+    <script src="//unpkg.com/leaflet-gesture-handling"></script>
+    
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        offset: 400,
-        duration: 1000,
-        once: false,
-        disableMutationObserver: false,
-        debounceDelay: 50,
-        throttleDelay: 99,  
-      });
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>

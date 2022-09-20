@@ -1,9 +1,47 @@
+// hamburger menu
 const burger = document.querySelector(".burger-wrapper");
 const navlinks = document.querySelector(".nav-links");
 const links = document.querySelector(".nav-links li");
+const body = document.body;
 
 burger.addEventListener("click", () => {
   navlinks.classList.toggle("open");
+  body.classList.toggle("fixed-position");
+});
+
+navlinks.addEventListener("click", () => {
+  navlinks.classList.remove("open");
+  body.classList.remove("fixed-position");
+});
+
+let lastscroll = 0;
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll <= 0) {
+    body.classList.remove("scroll-up");
+  }
+
+  if (currentScroll > lastscroll && !body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-up");
+    body.classList.add("scroll-down");
+  }
+
+  if (currentScroll < lastscroll && body.classList.contains("scroll-down")) {
+    body.classList.remove("scroll-down");
+    body.classList.add("scroll-up");
+  }
+
+  lastscroll = currentScroll;
+});
+//animation
+AOS.init({
+  offset: 400,
+  duration: 1000,
+  once: false,
+  disableMutationObserver: false,
+  debounceDelay: 50,
+  throttleDelay: 99,
 });
 
 // maps
@@ -25,7 +63,23 @@ var locations = [
   ],
 ];
 
-var map = L.map("map").setView([-6.299548, 106.751261], 11);
+var pc = true;
+
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  pc = false;
+}
+
+var map = L.map("map", {
+  gestureHandling: true,
+  attributionControl: false,
+  dragging: pc,
+  tap: pc,
+}).setView([-6.299548, 106.751261], 11);
+
 var googleStreets = L.tileLayer(
   "http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}",
   {
@@ -48,4 +102,18 @@ for (var i = 0; i < locations.length; i++) {
   marker = L.marker([locations[i][1], locations[i][2]], { icon: markerIcon })
     .bindPopup(locations[i][0])
     .addTo(map);
+}
+
+const mapEl = document.querySelector("#map");
+
+// Binds event listeners for the map and calls the function
+mapEl.addEventListener("touchstart", onTwoFingerDrag);
+mapEl.addEventListener("touchend", onTwoFingerDrag);
+
+function onTwoFingerDrag(e) {
+  if (e.type === "touchstart" && e.touches.length === 1) {
+    e.currentTarget.classList.add("swiping");
+  } else {
+    e.currentTarget.classList.remove("swiping");
+  }
 }
