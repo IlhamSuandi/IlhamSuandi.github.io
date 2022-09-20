@@ -36,12 +36,8 @@ window.addEventListener("scroll", () => {
 });
 //animation
 AOS.init({
-  offset: 400,
   duration: 1000,
-  once: false,
-  disableMutationObserver: false,
-  debounceDelay: 50,
-  throttleDelay: 99,
+  once: true,
 });
 
 // maps
