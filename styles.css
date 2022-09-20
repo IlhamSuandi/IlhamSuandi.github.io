@@ -61,8 +61,8 @@ header {
   transform: translate3d(0, -150%, 0);
 }
 
-.scroll-up header {
-}
+/* .scroll-up header {
+} */
 
 .navbar-content {
   display: flex;
@@ -789,7 +789,7 @@ ol li {
   }
   .square-radius {
     padding-bottom: 1vw;
-    margin-top: 20vw;
+    margin-top: 8rem;
     margin-bottom: 2vw;
     display: inline-block;
     width: 90vw;
@@ -832,10 +832,15 @@ ol li {
     text-align: left;
     position: absolute;
     border: 2px blue;
-    margin-top: 15vw;
+    margin-top: 8vw;
     left: 1vw;
     right: 0;
   }
+
+  .visi-misi-container {
+    margin-top: 13vw;
+  }
+
   .icon-visi img {
     width: 12vw;
   }
