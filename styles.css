@@ -1,0 +1,1300 @@
+@font-face {
+  font-family: adinaka-bold;
+  src: url(./source/font/ADLINNAKA-BOLDDEMO.TTF);
+}
+@font-face {
+  font-family: isidora-black;
+  src: url(./source/font/ISIDORABLACK.OTF);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./source/background/BG_PROPOSAL-11.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: 16px;
+  min-width: 100%;
+  min-height: 100%;
+  font-family: adinaka-bold;
+  overflow-x: hidden;
+}
+
+html {
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+
+.fixed-position {
+  overflow: hidden;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* @@@@@@@@@@@@@ NAVBAR @@@@@@@@@@@@*/
+header {
+  transition: all 300ms ease-in-out;
+  height: auto;
+  width: 100%;
+  background-color: #ef4b24;
+  padding-top: auto;
+  position: fixed;
+  z-index: 999999;
+  transition: all 300ms ease-in-out;
+}
+
+.scroll-down header {
+  transform: translate3d(0, -150%, 0);
+}
+
+.scroll-up header {
+}
+
+.navbar-content {
+  display: flex;
+  width: 100%;
+  margin: auto 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 100%;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.logo-wrapper {
+  margin: 0.5em;
+}
+
+.burger-wrapper {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 60%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 5vw;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 5vw;
+  text-align: center;
+}
+
+.nav-links li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: calc(0.5rem + 1vw);
+}
+
+.photo {
+  max-width: 200px;
+}
+
+.about-container {
+  margin: 5rem;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.about-wrapper img {
+  max-width: fit-content;
+}
+
+/* @@@@@@@@@@@@@ ABOUT @@@@@@@@@@@@*/
+.container {
+  max-width: 100%;
+  text-align: center;
+}
+.border {
+  width: 100%;
+  border-radius: 0 0 3% 3%;
+  border: 2px solid white;
+}
+.square-radius {
+  padding-bottom: 1vw;
+  margin-top: 15vw;
+  margin-bottom: 2vw;
+  display: inline-block;
+  width: 70%;
+  border-radius: 0 0 3% 3%;
+  background-color: #ef4b24;
+}
+
+.border img {
+  min-width: 60vw;
+}
+.photo {
+  margin-top: -6%;
+  margin-bottom: -2vw;
+}
+.about-text {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.about-text h1 {
+  font-size: 6rem;
+  margin-bottom: 1vw;
+  color: whitesmoke;
+}
+
+.about-text p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 4vw;
+  color: whitesmoke;
+}
+
+/* @@@@@@@@@@@@@ VISI & MISI @@@@@@@@@@@@*/
+.icon-visi {
+  text-align: left;
+  position: absolute;
+  border: 2px blue;
+  margin-top: 12vw;
+  left: 13vw;
+  right: 0;
+}
+.icon-visi img {
+  width: 10vw;
+}
+
+.icon-misi {
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  border: 2px blue;
+  margin-top: -10vw;
+  top: auto;
+  left: -13vw;
+  right: 0;
+  z-index: 9999;
+}
+
+.icon-misi img {
+  width: 10vw;
+}
+
+.container :is(.visi, .misi) {
+  color: whitesmoke;
+}
+.visi {
+  margin-top: 7vw;
+  text-align: left;
+  padding-left: 5vw;
+  padding-right: 10vw;
+  /* margin-bottom: -1vw; */
+}
+.visi h1 {
+  padding-bottom: 1.2vw;
+  font-size: 4.8rem;
+}
+
+.misi {
+  text-align: left;
+  padding-left: 5vw;
+  margin-top: 2vw;
+  padding-right: 8vw;
+  margin-bottom: 3vw;
+}
+.misi h1 {
+  padding-bottom: 1.2vw;
+  font-size: 4.8rem;
+}
+
+ol li {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2vw;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+/* @@@@@@@@@@@@@ Benefit @@@@@@@@@@@@*/
+.asset-container {
+  width: 100%;
+  text-align: left;
+}
+
+.asset-container h1 {
+  position: relative;
+  top: -26vw;
+  z-index: 999;
+  margin-top: 35vw;
+  margin-left: -1.5vw;
+  line-height: 10.5vw;
+  font-family: isidora-black;
+  -webkit-text-stroke: 2px #d47241;
+  text-shadow: -0.7vw 0.2vw #e05f5f, 0.2vw 1.3vw 1.8vw #000000;
+  transform: rotate(-4deg);
+  color: #ffffff;
+  font-size: 10vw;
+}
+
+.row {
+  max-width: 70%;
+  width: 80vw;
+  margin-top: 23vw;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 50vw;
+  background-color: #ef4b24;
+  margin-bottom: 10vw;
+  border-radius: 0 0 3% 3%;
+}
+
+.square-2 {
+  border-radius: 50%;
+  min-height: 50vw;
+  position: relative;
+  background-color: #ef4b24;
+  text-align: left;
+  padding-bottom: 4vw;
+}
+
+.square-2:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -8vw;
+  left: 0;
+  background-color: #ef4b24;
+  transform: skewY(-3deg);
+  z-index: -1;
+}
+
+.square-2 ol {
+  margin-top: -23vw;
+  color: whitesmoke;
+  list-style: none;
+}
+.square-2 ol li {
+  line-height: 2rem;
+}
+.square-2 ol li h1 {
+  font-size: 2.5rem;
+  margin-right: 22vw;
+  line-height: 2.5rem;
+}
+.square-2 ol li p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-right: 7vw;
+  padding-bottom: 3vw;
+}
+
+.asset-3 {
+  min-width: 70%;
+  position: absolute;
+  text-align: right;
+  margin-top: -12vw;
+  margin-left: 5vw;
+}
+.asset-3 img {
+  width: 16vw;
+}
+
+/* @@@@@@@@@@@@@ Menu Favorit @@@@@@@@@@@@ */
+.menu-title {
+  position: relative;
+  z-index: -1;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  margin-bottom: -19vw;
+  margin-top: 10vw;
+}
+
+.asset-4 {
+  width: 100%;
+}
+
+.menu-content {
+  width: 100%;
+  position: relative;
+  top: -8vw;
+  padding: -5;
+}
+
+.menu-1 {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 5vw;
+  align-items: center;
+}
+
+.salmon-mentai img {
+  text-align: center;
+  width: 55vw;
+}
+
+.asset-5 img {
+  margin-left: -21.2vw;
+  margin-top: -30vw;
+  width: 40vw;
+}
+
+.menu-2 {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 8vw;
+}
+
+.menu-2-content img {
+  text-align: center;
+  width: 35vw;
+}
+
+.takoyaki-gurita {
+  position: relative;
+  right: 3vw;
+  margin-top: 2vw;
+}
+
+.asset-6 {
+  position: relative;
+  z-index: 1;
+  margin-left: -25vw;
+  top: 4vw;
+  right: 7vw;
+  width: 30vw;
+}
+
+.okonomiyaki-seafood {
+  position: relative;
+  top: -35vw;
+  margin-left: 30vw;
+  left: 5vw;
+}
+
+.asset-7 {
+  position: relative;
+  margin-left: -32vw;
+  margin-top: 3vw;
+  width: 30vw;
+  top: 2vw;
+  right: 2vw;
+}
+
+.partnership {
+  max-width: 100%;
+  width: 72vw;
+  min-height: 10vw;
+  border-radius: 0 0 50px 50px;
+  background-color: #ef4b24;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0.8rem 4rem;
+  color: whitesmoke;
+  margin-top: -25vw;
+}
+
+.partnership h1 {
+  font-size: 5rem;
+}
+.partnership p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.partnership-logo {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.partnership-logo img {
+  margin-left: 1vw;
+  margin-top: 2vw;
+  max-width: 100%;
+  min-width: 17vw;
+}
+
+.shopee-food {
+  position: relative;
+  right: 3vw;
+}
+
+/* @@@@@@@@@@@@@ Konsep Dine-in @@@@@@@@@@@@*/
+.square {
+  width: 50%;
+}
+
+.square-header {
+  margin: 0 auto;
+}
+
+.square img {
+  width: 100%;
+  border: 1vw solid #ef4b24;
+  align-items: center;
+  text-align: center;
+}
+.image-flex img {
+  width: 40vw;
+}
+.image-flex {
+  position: relative;
+  top: -1vw;
+  background-color: #ef4b24;
+  border: 1vw solid #ef4b24;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.sketch-2 {
+  border-left: 0;
+}
+
+.sketch-3 {
+  border-left: 0;
+}
+
+.dine-in-asset {
+  min-width: 70%;
+  position: relative;
+  margin-top: 3vw;
+  text-align: right;
+  right: 8vw;
+  margin-bottom: -5vw;
+}
+
+.dine-in-asset img {
+  width: 16vw;
+}
+
+/* @@@@@@@@@@@@@ Paket Investasi 1 @@@@@@@@@@@@*/
+.title-investasi h1 {
+  position: relative;
+  z-index: 0;
+  padding-top: 5vw;
+  font-size: 5.5vw;
+  line-height: 6vw;
+}
+.square-2 ul {
+  margin-top: -23vw;
+  position: relative;
+  top: -3vw;
+}
+
+.list-investasi {
+  color: whitesmoke;
+}
+.list-investasi h1 {
+  font-size: 3.5rem;
+  margin-left: 4vw;
+  margin-top: 2vw;
+  padding-top: 2vw;
+}
+.list-investasi p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+.pricing img {
+  width: 15%;
+  margin-top: -7vw;
+  float: right;
+  margin-right: 3vw;
+}
+.square-2 > ul li {
+  list-style: square;
+  font-size: 2rem;
+  margin-left: 5.5vw;
+}
+.line {
+  margin: 0 auto;
+  margin-top: 2vw;
+  width: 90%;
+  border: 2px solid whitesmoke;
+  background-color: whitesmoke;
+}
+.footer-investasi {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  margin-left: 4.2vw;
+}
+
+/* @@@@@@@@@@@@@ Paket Investasi 2 @@@@@@@@@@@@*/
+.title {
+  padding-top: 2vw;
+  margin-top: 2vw;
+}
+
+.list-investasi-1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.asset-3-paket-investasi {
+  position: relative;
+  top: 8vw;
+  left: 5vw;
+}
+.paket-investasi-2-sub h1 {
+  font-size: 2.5rem;
+}
+
+.paket-investasi-2-img {
+  padding-top: 10vw;
+  left: 2vw;
+  top: -23.5vw;
+}
+
+/* @@@@@@@@@@@@@ Paket Investasi 3 @@@@@@@@@@@@*/
+.margin-p {
+  margin-bottom: 20vw;
+}
+.paket-investasi-3-pricing {
+  position: relative;
+  right: 30vw;
+  top: -1vw;
+  width: 100vw;
+}
+
+/* @@@@@@@@@@@@@ Syarat Menjadi Mitra @@@@@@@@@@@@*/
+.yellow-line {
+  margin: 0 auto;
+  margin-top: 2vw;
+  width: 90%;
+  max-height: 1px;
+  border: 2px solid orange;
+  background-color: orange;
+}
+.syarat-mitra {
+  margin-top: -21vw;
+  margin-bottom: 10vw;
+}
+
+.flex-text {
+  align-items: center;
+  display: flex;
+  color: whitesmoke;
+}
+.flex-text h1 {
+  margin-left: 5vw;
+  font-size: calc(7vw + 1rem);
+  margin-right: 5vw;
+}
+.sub {
+  width: 75%;
+  margin-left: calc(1.7vw - 1pt);
+}
+.flex-text p {
+  font-size: calc(1vw + 1rem);
+  margin-right: 5vw;
+}
+
+/* @@@@@@@@@@@@@ Cara Menjadi Mitra @@@@@@@@@@@@*/
+.icon-sushi {
+  width: 100%;
+  text-align: right;
+  position: relative;
+  border: 2px blue;
+  margin-top: -20vw;
+  margin-bottom: 45vw;
+  top: 10vw;
+  left: 5vw;
+  z-index: 9999;
+}
+.icon-sushi img {
+  width: 30vw;
+}
+.arrow img {
+  width: 85%;
+  margin: 2vw 0;
+}
+.arrow {
+  text-align: center;
+}
+.icon-container img {
+  width: 10vw;
+}
+.icon-container {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.icon-container h1 {
+  font-size: 5rem;
+  padding-left: 1.5vw;
+}
+.flex-items {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 8vw;
+  color: whitesmoke;
+  /* border: 2px solid black; */
+  gap: 3vw;
+}
+.flex {
+  width: 50%;
+  /* border: 2px solid yellow; */
+  margin: 0 1vw;
+}
+
+.subtitle {
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  padding-top: 1.2rem;
+}
+
+/*@@@@@@@@@@@@ MAPS @@@@@@@@@@@@*/
+.title-maps h1 {
+  /* padding-top: 20vw; */
+  top: -20vw;
+  z-index: 0;
+}
+
+#map {
+  position: relative;
+  z-index: 0;
+  top: 2vw;
+  height: 900px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*@@@@@@@@@@@@ Whatsapp Button @@@@@@@@@@@@*/
+.whatsapp-button {
+  display: flex;
+  position: fixed;
+  max-width: 400px;
+  min-width: 250px;
+  height: 60px;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  background-color: #177d10;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.flex-button {
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.whatsapp-button h1 {
+  color: whitesmoke;
+  font-size: calc(1rem + 0.5vw);
+  z-index: 99999;
+}
+
+.whatsapp-button img {
+  width: 12%;
+}
+
+/*@@@@@@@@@@@@ MOBILE @@@@@@@@@@@@*/
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    max-height: 50vh;
+    width: 100%;
+    flex-direction: column;
+    transform: translate(0, -160%);
+    background-color: slategrey;
+    clip-path: square(100px at 50% -50%);
+    -webkit-clip-path: square(100px at 50% -50%);
+    transition: all 0.5s ease-out;
+  }
+
+  .nav-links.open {
+    max-height: 40vh;
+    clip-path: square(100px at 50% -50%);
+    -webkit-clip-path: square(400px at 50% -50%);
+    transform: translate(0, 41%);
+    border-radius: 0 0 50px 50px;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  .navbar-content {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-wrapper {
+    margin-inline-start: 1rem;
+  }
+
+  .logo {
+    max-width: 100%;
+    width: 60px;
+    border-radius: 50%;
+  }
+
+  .burger-wrapper {
+    display: block;
+    margin-inline-end: 2rem;
+    z-index: 2;
+  }
+  .lines {
+    cursor: pointer;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }
+
+  /* @@@@@@@@@@@@@ ABOUT @@@@@@@@@@@@*/
+  .container {
+    max-width: 100%;
+    text-align: center;
+  }
+  .border {
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+    border: 2px solid white;
+  }
+  .square-radius {
+    padding-bottom: 1vw;
+    margin-top: 20vw;
+    margin-bottom: 2vw;
+    display: inline-block;
+    width: 90vw;
+    border-radius: 0 0 30px 30px;
+    background-color: #ef4b24;
+  }
+
+  .border img {
+    min-width: 60vw;
+  }
+  .photo {
+    margin-top: -6%;
+    margin-bottom: -2vw;
+  }
+  .about-text {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  .about-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: whitesmoke;
+  }
+  .about-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 4vw;
+    line-height: 1.2rem;
+    color: whitesmoke;
+  }
+
+  /* @@@@@@@@@@@@@ VISI & MISI @@@@@@@@@@@@*/
+  .icon-visi {
+    text-align: left;
+    position: absolute;
+    border: 2px blue;
+    margin-top: 15vw;
+    left: 1vw;
+    right: 0;
+  }
+  .icon-visi img {
+    width: 12vw;
+  }
+
+  .icon-misi {
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    border: 2px blue;
+    margin-top: -10vw;
+    top: auto;
+    left: -2vw;
+    right: 0;
+    z-index: 1;
+  }
+
+  .icon-misi img {
+    width: 12vw;
+  }
+
+  .container :is(.visi, .misi) {
+    color: whitesmoke;
+  }
+  .visi {
+    margin-top: 7vw;
+    text-align: left;
+    padding-left: 5vw;
+    padding-right: 7vw;
+  }
+  .visi h1 {
+    padding-bottom: 1.2vw;
+    font-size: 2.5rem;
+  }
+
+  .misi {
+    text-align: left;
+    padding-left: 5vw;
+    margin-top: 2vw;
+    padding-right: 5vw;
+    margin-bottom: 3vw;
+  }
+  .misi h1 {
+    padding-bottom: 1.2vw;
+    font-size: 2.5rem;
+  }
+
+  ol li {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2vw;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  /* @@@@@@@@@@@@@ BENEFIT @@@@@@@@@@@@*/
+  .asset-container {
+    position: relative;
+    width: 100%;
+    text-align: left;
+  }
+
+  .asset-container h1 {
+    position: relative;
+    top: -26vw;
+    z-index: 999;
+    margin-top: 35vw;
+    margin-left: -1.5vw;
+    line-height: 12.3vw;
+    font-family: isidora-black;
+    -webkit-text-stroke: 2px #d47241;
+    text-shadow: -0.7vw 0.2vw #e05f5f, 0.2vw 1.3vw 1.8vw #000000;
+    transform: rotate(-4deg);
+    color: #ffffff;
+    font-size: 11.8vw;
+  }
+
+  .row {
+    max-width: 90%;
+    width: 90vw;
+    margin-top: 23vw;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 50vw;
+    background-color: #ef4b24;
+    margin-bottom: 10vw;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .square-2 {
+    border-radius: 50%;
+    min-height: 50vw;
+    position: relative;
+    background-color: #ef4b24;
+    text-align: left;
+    padding-bottom: 4vw;
+  }
+
+  .square-2:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 80%;
+    top: -8vw;
+    left: 0;
+    background-color: #ef4b24;
+    transform: skewY(-3deg);
+    z-index: -1;
+  }
+
+  .square-2 ol {
+    margin-top: -23vw;
+    color: whitesmoke;
+    list-style: none;
+  }
+  .square-2 ol li {
+    line-height: 2rem;
+  }
+  .square-2 ol li h1 {
+    font-size: 1.2rem;
+    margin-right: 22vw;
+    line-height: 1.2rem;
+    padding-bottom: 1vw;
+  }
+  .square-2 ol li p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-right: 7vw;
+    padding-bottom: 5vw;
+  }
+
+  .asset-3 {
+    min-width: 70%;
+    position: absolute;
+    text-align: right;
+    margin-top: -12vw;
+    margin-left: 25vw;
+  }
+  .asset-3 img {
+    width: 16vw;
+  }
+
+  /* @@@@@@@@@@@@@ Menu Favorit @@@@@@@@@@@@ */
+  .menu-title h1 {
+    font-size: 10vw;
+  }
+  .asset-4 {
+    width: 100%;
+  }
+
+  .menu-content {
+    width: 100%;
+    position: relative;
+    top: -8vw;
+    padding: -5;
+  }
+
+  .menu-1 {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 5vw;
+    align-items: center;
+  }
+
+  .salmon-mentai img {
+    text-align: center;
+    width: 55vw;
+  }
+
+  .asset-5 img {
+    margin-top: -30vw;
+    width: 40vw;
+  }
+
+  .menu-2 {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 8vw;
+  }
+
+  .menu-2-content img {
+    text-align: center;
+    width: 35vw;
+  }
+
+  .takoyaki-gurita {
+    position: relative;
+    right: 3vw;
+    margin-top: 2vw;
+  }
+
+  .asset-6 {
+    position: relative;
+    z-index: 1;
+    top: 4vw;
+    right: 7vw;
+    width: 30vw;
+  }
+
+  .okonomiyaki-seafood {
+    position: relative;
+    top: -35vw;
+    /* margin-left: 30vw; */
+    left: 5vw;
+  }
+
+  .asset-7 {
+    position: relative;
+    margin-top: 3vw;
+    width: 30vw;
+    top: 2vw;
+    right: 2vw;
+  }
+
+  .partnership {
+    max-width: 100%;
+    width: 90vw;
+    min-height: 10vw;
+    border-radius: 0 0 30px 30px;
+    background-color: #ef4b24;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0.8vw 4vw;
+    color: whitesmoke;
+    margin-top: -25vw;
+  }
+
+  .partnership h1 {
+    font-size: 7vw;
+  }
+  .partnership p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+  }
+
+  .partnership-logo {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .partnership-logo img {
+    margin-left: 1vw;
+    margin-top: 2vw;
+    max-width: 100%;
+    min-width: 17vw;
+  }
+
+  .shopee-food {
+    position: relative;
+    right: 3vw;
+  }
+
+  /* @@@@@@@@@@@@@ Paket Investasi 1 @@@@@@@@@@@@*/
+  .title-investasi h1 {
+    padding-top: 5vw;
+    font-size: 7vw;
+    line-height: 6vw;
+    position: relative;
+    z-index: 0;
+  }
+
+  .asset-10 {
+    top: -25vw;
+    left: 2vw;
+    padding-top: 10vw;
+    width: 110%;
+  }
+
+  .square-2 ul {
+    margin-top: -23vw;
+    margin-left: 2vw;
+    position: relative;
+    top: -3vw;
+  }
+
+  .list-investasi {
+    color: whitesmoke;
+  }
+  .list-investasi h1 {
+    font-size: 1.5rem;
+    margin-left: 4vw;
+    margin-top: 2vw;
+  }
+  .list-investasi p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .pricing img {
+    width: 20%;
+    margin-top: -11vw;
+    float: right;
+    margin-right: 3vw;
+  }
+  .square-2 > ul li {
+    list-style: square;
+    font-size: 1rem;
+    margin-left: 5.5vw;
+  }
+  .line {
+    margin: 0 auto;
+    margin-top: 2vw;
+    width: 90%;
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+  }
+  .footer-investasi {
+    color: whitesmoke;
+    font-size: 0.8rem;
+    margin-left: 4.2vw;
+    margin-right: 4.2vw;
+  }
+
+  /* @@@@@@@@@@@@@ Paket Investasi 2 @@@@@@@@@@@@*/
+  .title h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .list-investasi-1 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+
+  .asset-3-paket-investasi {
+    position: relative;
+    top: 8vw;
+    left: 5vw;
+  }
+
+  .paket-investasi-sub h1 {
+    font-size: 1.5rem;
+  }
+  /* @@@@@@@@@@@@@ Paket Investasi 3 @@@@@@@@@@@@*/
+  .margin-p {
+    margin-bottom: 20vw;
+  }
+  .paket-investasi-3-pricing {
+    position: relative;
+    right: 23vw;
+    top: -1vw;
+    width: 100vw;
+  }
+
+  /* @@@@@@@@@@@@@ Syarat Menjadi Mitra @@@@@@@@@@@@*/
+  .yellow-line {
+    margin: 2vw auto;
+    width: 90%;
+    max-height: 1px;
+    border: 2px solid orange;
+    background-color: orange;
+  }
+  .asset-11 {
+    top: -25vw;
+    left: 2vw;
+    padding-top: 10vw;
+    width: 100%;
+  }
+
+  .syarat-mitra {
+    padding-top: -30vw;
+    padding-bottom: 20vw;
+  }
+
+  .flex-text {
+    align-items: center;
+    display: flex;
+    color: whitesmoke;
+  }
+  .flex-text h1 {
+    margin-left: 5vw;
+    font-size: calc(7vw + 1rem);
+    margin-right: 5vw;
+  }
+  .sub {
+    width: 75%;
+    margin-left: calc(3vw - 1pt);
+  }
+  .flex-text p {
+    font-size: calc(1vw + 0.5rem);
+    margin-right: 5vw;
+  }
+  .icon-sushi {
+    width: 100%;
+    text-align: right;
+    position: relative;
+    border: 2px blue;
+    margin-top: -20vw;
+    margin-bottom: 40vw;
+    top: 10vw;
+    left: 5vw;
+    z-index: 9999;
+  }
+  .icon-sushi img {
+    width: 30vw;
+  }
+
+  /* @@@@@@@@@@@@@ Cara Menjadi Mitra @@@@@@@@@@@@*/
+  .arrow img {
+    width: 85%;
+    margin: 2vw 0;
+  }
+  .arrow {
+    text-align: center;
+  }
+  .icon-container img {
+    width: 15vw;
+  }
+  .icon-container {
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+
+  .icon-container h1 {
+    font-size: calc(7vw + 1rem);
+    padding-left: 1.5vw;
+  }
+  .flex-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 8vw;
+    color: whitesmoke;
+    /* border: 2px solid black; */
+    gap: 5vw;
+  }
+  .flex {
+    width: 100%;
+    /* border: 2px solid yellow; */
+    margin: 0 1vw;
+  }
+
+  .subtitle {
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: calc(0.5vw + 1rem);
+    padding-top: 1.2rem;
+  }
+
+  /* @@@@@@@@@@@@@ MAPS @@@@@@@@@@@@*/
+  .title-maps h1 {
+    top: -20vw;
+    position: relative;
+    z-index: 0;
+  }
+
+  #map {
+    position: relative;
+    top: 5vw;
+    height: 450px;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
