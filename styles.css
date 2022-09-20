@@ -421,7 +421,6 @@ ol li {
 .partnership p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  font-weight: 100;
 }
 
 .partnership-logo {
@@ -736,7 +735,7 @@ ol li {
   }
 
   .nav-links.open {
-    max-height: 40vh;
+    max-height: 50vh;
     clip-path: square(100px at 50% -50%);
     -webkit-clip-path: square(400px at 50% -50%);
     transform: translate(0, 41%);
