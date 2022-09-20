@@ -9,7 +9,7 @@ burger.addEventListener("click", () => {
 // maps
 var locations = [
   [
-    "<h1>Ebiko Sushi Dan Takoyaki <br> Lebak Bulus (Cabang Pertama)</h1> <p>Ebiko Sushi dan Takoyaki, Jl. Damar No.9, RW.6, Pd. Labu, Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12450</p> <a href='https://g.page/ebiko-sushi-dan-takoyaki?share'>Lihat di Maps</a>",
+    "<h1>Ebiko Sushi Dan Takoyaki <br> Lebak Bulus (Cabang Pertama)</h1> <p>Ebiko Sushi dan Takoyaki, Jl. Damar No.9, RW.6, Pd. Labu, Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12450</p> <a href='https://www.google.com/maps/place/Ebiko+Sushi+dan+Takoyaki/@-6.312132,106.7862441,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69ef26d2bee477:0x8c7d86cc7c4fadd!8m2!3d-6.312132!4d106.7862441'>Lihat di Maps</a>",
     -6.31211697687172,
     106.78624361808949,
   ],
