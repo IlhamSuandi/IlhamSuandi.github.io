@@ -1238,7 +1238,7 @@ ol li {
     margin-bottom: 40vw;
     top: 10vw;
     left: 5vw;
-    z-index: 9999;
+    z-index: 0;
   }
   .icon-sushi img {
     width: 30vw;
